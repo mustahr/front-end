@@ -1,10 +1,8 @@
-
-import Link from "next/link"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
-import Button from "./ui/button"
 import { Logo } from "./ui/logo"
 import { MainNav } from "./main-nav"
 import { SearchModal } from "@/modals/searchModal"
+import Button from "@/components/ui/button"; // Correct import
 
 export default function Component() {
     return (
