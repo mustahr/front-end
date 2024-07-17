@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { EmailForm } from "./email-form"
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
             <footer className="w-full bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 fixed bottom-0 -z-[1]">
                 <div className="bg-slate-200 px-4 py-16 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="flex justify-between items-center border-r-2 border-gray-200 p-8">
+                        <div className="flex justify-between items-center border-r-2 border-gray-200 p-8 text-black">
                             <div >
                                 <h1 className="text-3xl font-bold">Leading the way in advanture</h1>
                             </div>
@@ -47,10 +48,10 @@ const Footer = () => {
                         </div>
                         <div className="flex justify-between items-center  p-8">
                             <div>
-                                <h1 className="text-3xl font-bold">Join our news letter</h1>
+                                <h1 className="text-3xl font-bold text-black">Join our news letter</h1>
                             </div>
                             <div className="flex space-x-6 text-gray-600">
-                                form
+                                <EmailForm />
                             </div>
                         </div>
                     </div>
@@ -63,7 +64,7 @@ const Footer = () => {
                         </div>
                         <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
                             <div>
-                                <p className="font-medium">
+                                <p className="font-medium text-black">
                                     Company
                                 </p>
                                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
@@ -88,7 +89,7 @@ const Footer = () => {
                                 </nav>
                             </div>
                             <div>
-                                <p className="font-medium">
+                                <p className="font-medium text-black">
                                     Services
                                 </p>
                                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
@@ -100,7 +101,7 @@ const Footer = () => {
                                 </nav>
                             </div>
                             <div>
-                                <p className="font-medium">
+                                <p className="font-medium text-black">
                                     Helpful Links
                                 </p>
                                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
@@ -110,7 +111,7 @@ const Footer = () => {
                                 </nav>
                             </div>
                             <div>
-                                <p className="font-medium">
+                                <p className="font-medium text-black">
                                     Legal
                                 </p>
                                 <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
@@ -132,3 +133,23 @@ const Footer = () => {
 }
 
 export default Footer;
+
+function ArrowUpIcon(props: any) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <path d="m5 12 7-7 7 7" />
+            <path d="M12 19V5" />
+        </svg>
+    )
+}

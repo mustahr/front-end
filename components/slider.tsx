@@ -72,7 +72,7 @@ const Slider = () => {
         }
     }
     return (
-        <div className="relative w-full h-screen overflow-hidden flex justify-center items-center">
+        <div className="relative w-full h-screen overflow-hidden flex justify-center items-center bg-black">
             <div className="absolute top-0 right-0 bottom-16 left-0 animate-fromTop-anime duration-500 ease-in" ref={slider}>
                 {slidesData.map((slide, index) => (
                     <div key={index} className='slides absolute top-[60%] transform translate-x-0 -translate-y-[40%] w-[140px] h-[200px] bg-full bg-center rounded-2xl shadow-2xl transition-all duration-500 flex items-center justify-start overflow-hidden'
